@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="./assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/css/style.css">
+   <!-- Write your comments here -->
+</head>
+<body style="background-color:grey"; >
+    <header class="bg-primary text-center text-dark">
+        <h1 class="container">BOOTSTRAP BUTTON Alert <span class="badge">BADGE</span></h1>
+    </header>
+    <div class="container alert alert-info alert-dismissible fade-show alert-link">this is an alert 
+        <a href="#">click here</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <p class="container">
+        <!--it is a badge--><span class="badge badge-pill bg-primary ">badge</span>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Eligendi nisi debitis, quasi atque accusantium unde fuga totam velit temporibus non ad. 
+        Eum, eaque corrupti! Delectus eligendi rem ex voluptate laudantium.</p>
+       <div class="text-center">
+        <button type="submit" class="btn btn-primary  active btn-outline-primary">submit</button>
+        <button type="reset" class="btn btn-danger ">cancel</button>
+        
+        <hr>
+        <!--instal and import pooper for dropdown menu working now i didnt install pop up menu-->
+        <!-- dropdown menu-->
+               <div class="col-6 container text-center">
+            <button class="btn btn-primary dropdown-toggle "  data-bs-toggle="dropdown" type="button">contact</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">whatsapp</a>
+                <a href="#" class="dropdown-item">facebook</a>
+                <a href="#" class="dropdown-item">twitter</a>
+            </div>
+    
+        </div><hr>
+        <!--accordian-->
+        <div class="container" id="accordion">
+            <h3>BOOTSTRAP</h3>
+
+            <div class="card">
+                <div  class=" card-head " >
+                     <a class="card-link" href="#accordExample" data-bs-toggle="collapse" > how bootstrap accodrion works</a>
+                </div>
+               
+                <div class="collapse" id="accordExample" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        First create a container with accord heading then cfreate a card--having card heading
+                        card body then create a div having class collapse and put the  body in the collapsethen createa relation between car head and body using id and put data toggle in the 
+                        card head and then reference the accord head in the card body using data-parent.Thus it works
+                    </div>
+                </div>
+                
+
+                </div>
+            </div>
+         </div>
+
+          <!--progreess bar-->
+    <div class="progress my-5">
+        <div class="progress-bar w-50 ms-start bg-info">loading </div>
+      </div>
+
+      <!--multiole colors-->
+      <div class="progress" style="height:2rem">
+        <div class="progress-bar bg-success w-50 progress-bar-striped">green</div>
+        <div class="progress-bar bg-warning w-50 progress-bar-striped progress-bar-animated">yellow</div>
+        <div class="progress-bar bg-alert w-75 progress-bar-animated">red</div>
+        <div class="progress-bar bg-dark w-25">dark</div>
+      </div>
+
+
+        <!--collapse-->
+        <h3 class="my-5">Download link</h3>
+
+        <p>choose link</p>
+
+        <p>
+            <a href="#examplev" class=" btn btn-primary" role="button" data-bs-toggle="collapse">view vetical card</a>
+            <button class="btn btn-primary"type="button" data-bs-toggle="collapse" data-bs-target="#examplev">view horiontal view</button>
+            <!--vetical card-->
+            <div class="container collapse multi-collapse" id="examplev">
+                <div class="row">
+                    <div class="col">
+                        <div class="container mb-5">
+                            <div class="card " style="width:18rem">
+                                <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+                                <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                                    <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                                        He is from batlagundu in Dindigul District studied B.E at 
+                                        SBMCET with aggregate of 6.91cgpa.
+                                    </p>
+                                </div>
+                                <div class="card-footer">This is footer section</div>
+                            </div>
+                            
+                        </div>
+               
+                    </div>
+        </p><hr>
+
+        
+  
+ 
+
+
+
+        <script src="./assests/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        </script>
+        <script src="./assests/js/jquery.min.js "></script>
+</body>

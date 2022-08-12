@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="./assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/style.css">
+   <!-- Write your comments here -->
+</head>
+<body style="background-color:dimgrey;">
+    <!--header starting-->
+    <header>
+        <nav class="navbar bg-primary text-center navbar-dark navbar-expand-lg ">
+            <div class="container">
+                    <a href="/" class="navbar-brand "><h1>RAGULS EXAMPLE PAGE</h1></a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rag">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="rag">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item active"><a href="scrollspy.html" class="nav-link" target="_blank">HOME</a></li>
+                        <li class="navbar-item active"><a href="nav.html" class="nav-link" target="_blank">NAV</a></li>
+                        <li class="navbar-item active"><a href="button.html" class="nav-link" target="_blank">BUTTON</a></li>
+                        <li class="navbar-item active"><a href="forms.html" class="nav-link" target="_blank">FORM</a></li>
+                        <li class="navbar-item active"><a href="cards.html" class="nav-link" target="_blank">CARD</a></li>
+                        <li class="navbar-item active"><a href="grid.html" class="nav-link" target="_blank">GRID</a></li>
+                        <li class="navbar-item active"><a href="table.html" class="nav-link" target="_blank">TABLE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+     <!--header ending-->
+     <!--body starting-->
+     <section>
+            <h2 class=" container bg-dark text-center text-light">SECTIONATED CONTENT</h2>
+           <!--grid used here-->
+            <div class="container bg-light" >
+            <div class="row text-center">
+                <div class="col border text-dark">SPAN 1</div>
+                <div class="col border text-dark">SPAN 2</div>
+                <div class="col border text-dark">SPAN 3</div>
+
+            </div>
+           </div> <hr>
+           <!--cards-->
+           <div class="container mb-5">
+            <div class="card " style="width:18rem">
+                <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+                <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                    <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                        He is from batlagundu in Dindigul District studied B.E at 
+                        SBMCET with aggregate of 6.91cgpa.
+                    </p>
+                </div>
+                <div class="card-footer">This is footer section</div>
+            </div>
+        </div> <hr>
+       <!-- <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+        </div> -->
+         </section>
+     <!--body ending-->
+        <!--footer starting-->
+        <footer class="footer container">
+            <h3 class="text-center bg-warning ">end of list</h3>
+           <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">list1</li>
+            <li class="list-inline-item">list2</li>
+            <li class="list-inline-item">list3</li>
+            <li class="list-inline-item"></li>list4</li>
+           </ul>
+        </footer>
+         <!--footer ending-->
+
+    <script src="./assests/js/bootstrap.min.js"> </script>
+    <script src="./assests/js/jquery.min.js"></script>
+
+</body>
+</html>

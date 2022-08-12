@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="../assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/style.css">
+   <!-- Write your comments here -->
+</head>
+<body >
+    <!--nav satrt-->
+    <nav class=" navbar navbar-dark bg-primary navbar-expand-md">
+        <div class="container">   <a href="/" class="navbar-brand">BOOTSTRAP NAV</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbar">
+                               <ul class="navbar-nav">
+                   <li class="nav-item active"> <a class="nav-link" href="#">HOME</a> </li>
+                   <li class="nav-item"> <a class="nav-link" href="#">MENU</a> </li>
+                   <li class="nav-item"> <a class="nav-link" href="#">ABOUT</a> </li>
+                   <li class="nav-item"> <a class="nav-link" href="#">CAREERS</a> </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#">Link</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Dropdown
+                       </a>
+                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <li><a class="dropdown-item" href="#">Action</a></li>
+                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                       </ul>
+                     </li> 
+               </ul>
+           </div>
+       </div>
+       </nav>
+   
+</header>
+    <!--carousel start-->
+    
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"  >
+
+        <div class="carousel-inner" >
+            <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+            <div class="carousel-item">
+                <img src="./assests/image/first image.jpg" alt="fm" class="d-block w-100 ">
+            </div>
+            <div class="carousel-item active">
+                <img src="./assests/image/second image.webp" alt="sm" class="d-block  w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./assests/image/third image.jpg" alt="tm" class="d-block w-100">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            
+        </div>
+    </div>
+
+   
+
+          
+
+    <script src="./assests/js/bootstrap.min.js"> </script>
+    <script src="./assests/js/jquery.min.js"></script>
+
+</body>
+</html>

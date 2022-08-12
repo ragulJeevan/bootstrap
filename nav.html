@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="./assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/css/style.css">
+   <!-- Write your comments here -->
+</head>
+<body >
+     <!--nav start-->
+     <header>
+        
+      <nav class=" navbar navbar-dark bg-primary navbar-expand-md">
+       <div class="container">   <a href="/" class="navbar-brand">BOOTSTRAP NAV</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                              <ul class="navbar-nav">
+                  <li class="nav-item active"> <a class="nav-link" href="#">HOME</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">MENU</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">ABOUT</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#">CAREERS</a> </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> 
+              </ul>
+          </div>
+      </div>
+      </nav>
+  
+</header>
+<!-- nav end-->
+
+<!--nav and tab-->
+    <div class="container">
+      <div class="card my-5">
+        <div class="card-body">
+          <nav>
+            <div class="nav nav-tabs">
+              <a href="#nav-webdesign" id="webdesign" data-bs-toggle="tab" class="nav-link active" role="tab">WEB DESIGN</a>
+              <a href="#nav-webdev" id="webdev" data-bs-toggle="tab" class="nav-link" role="tab">WEB DEVELOPMENT</a>
+              <a href="#nav-mobdev" id="mobdev" data-bs-toggle="tab" class="nav-link" role="tab">MOBILE DEVELOPMENT</a>
+              <a href="#" id="webdesign" data-bs-toggle="tab" class="nav-link disable"  tabindex="-1"s>BETA DEVELOPMENT</a>
+            </div>
+          </nav>
+          <!--tab content-->
+          <div class="tab-content">
+            <!--1-->
+            <div class="tab-pane show active" id="nav-webdesign">
+              <div class="m-3">
+                <h3>WEB DESIGN</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+                   <!--2-->
+                   <div class="tab-pane show " id="nav-webdev">
+                    <div class="m-3">
+                      <h3>WEB DEVELOPMENT</h3>
+                      <ul>
+                        <li>PHP</li>
+                        <li>PYTHON</li>
+                      </ul>
+                    </div>
+                  </div>
+                   <!--3-->
+                   <div class="tab-pane show " id="nav-mobdev">
+                    <div class="m-3">
+                      <h3>MOBILE DEVELOPMENT</h3>
+                      <ul>
+                        <li>JAVA</li>
+                        <li>KOTLINK</li>
+                      </ul>
+                    </div>
+                  </div>       
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script src="./assests/js/bootstrap.min.js"> </script>
+<script src="./assests/js/jquery.min.js"></script>
+
+</body>
+</html>

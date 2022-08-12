@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh"content="05"/>
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="../assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/style.css">
+   <!-- Write your comments here -->
+</head>
+<body x data-bs-spy="scroll" data-bs-target="#myScroll" data-bs-offset="0" tab-index="0" style="background-color:dimgray" >
+    <!--nav bar-->
+
+    <header >
+        <nav id="myScroll" class="navbar bg-primary text-center navbar-dark navbar-expand-lg fixed-top ">
+            <div class="container">
+                    <a href="/" class="navbar-brand "><h1>RAGULS EXAMPLE PAGE</h1></a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rag">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="rag">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#home" class="nav-link" >HOME</a></li>
+                        <li class="nav-item"><a href="#nav" class="nav-link">NAV</a></li>
+                        <li class="nav-item"><a href="#button" class="nav-link" >BUTTON</a></li>
+                        <li class="nav-item"><a href="#form" class="nav-link" >FORM</a></li>
+                        <li class="nav-item"><a href="#card" class="nav-link" >CARD</a></li>
+                        <li class="nav-item"><a href="#grid" class="nav-link" >GRID</a></li>
+                        <li class="nav-item"><a href="#table" class="nav-link" >TABLE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--home index-->
+    <section id="home" class="bg-primary mt-5" style="padding:80px"  >
+        <h2 class=" container bg-dark text-center text-light">SECTIONATED CONTENT</h2>
+        <!--grid used here-->
+         <div class="container bg-light" >
+         <div class="row text-center">
+             <div class="col border text-dark">SPAN 1</div>
+             <div class="col border text-dark">SPAN 2</div>
+             <div class="col border text-dark">SPAN 3</div>
+
+         </div>
+        </div> <hr>
+        <!--cards-->
+        <div class="container mb-5">
+         <div class="card " style="width:18rem">
+             <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+             <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                 <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                     He is from batlagundu in Dindigul District studied B.E at 
+                     SBMCET with aggregate of 6.91cgpa.
+                 </p>
+             </div>
+             <div class="card-footer">This is footer section</div>
+         </div>
+     </div> <hr>
+    <!-- <div class="card"-->
+    </section>
+
+    <!--nav-->
+    <section id="nav" class="bg-warning mt-5" style="padding:80px" >
+        <h2>NAV</h2>
+        <div class="container">
+            <div class="card my-5">
+              <div class="card-body">
+                <nav>
+                  <div class="nav nav-tabs">
+                    <a href="#nav-webdesign" id="webdesign" data-bs-toggle="tab" class="nav-link active" role="tab">WEB DESIGN</a>
+                    <a href="#nav-webdev" id="webdev" data-bs-toggle="tab" class="nav-link" role="tab">WEB DEVELOPMENT</a>
+                    <a href="#nav-mobdev" id="mobdev" data-bs-toggle="tab" class="nav-link" role="tab">MOBILE DEVELOPMENT</a>
+                    <a href="#" id="webdesign" data-bs-toggle="tab" class="nav-link disable"  tabindex="-1"s>BETA DEVELOPMENT</a>
+                  </div>
+                </nav>
+                <!--tab content-->
+                <div class="tab-content">
+                  <!--1-->
+                  <div class="tab-pane show active" id="nav-webdesign">
+                    <div class="m-3">
+                      <h3>WEB DESIGN</h3>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>
+                    </div>
+                  </div>
+                         <!--2-->
+                         <div class="tab-pane show " id="nav-webdev">
+                          <div class="m-3">
+                            <h3>WEB DEVELOPMENT</h3>
+                            <ul>
+                              <li>PHP</li>
+                              <li>PYTHON</li>
+                            </ul>
+                          </div>
+                        </div>
+                         <!--3-->
+                         <div class="tab-pane show " id="nav-mobdev">
+                          <div class="m-3">
+                            <h3>MOBILE DEVELOPMENT</h3>
+                            <ul>
+                              <li>JAVA</li>
+                              <li>KOTLINK</li>
+                            </ul>
+                          </div>
+                        </div>       
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!--button-->
+    <section id="button" class="bg-primary mt-5" style="padding:80px" >
+        <h2>BUTTON</h2>
+        <div class="container alert alert-info alert-dismissible fade-show alert-link">this is an alert 
+            <a href="#">click here</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <p class="container">
+            <!--it is a badge--><span class="badge badge-pill bg-primary ">badge</span>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Eligendi nisi debitis, quasi atque accusantium unde fuga totam velit temporibus non ad. 
+            Eum, eaque corrupti! Delectus eligendi rem ex voluptate laudantium.</p>
+           <div class="text-center">
+            <button type="submit" class="btn btn-primary  active btn-outline-primary">submit</button>
+            <button type="reset" class="btn btn-danger ">cancel</button>
+            
+            <hr>
+            <!--instal and import pooper for dropdown menu working now i didnt install pop up menu-->
+            <!-- dropdown menu-->
+                   <div class="col-6 container text-center">
+                <button class="btn btn-primary dropdown-toggle "  data-bs-toggle="dropdown" type="button">contact</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">whatsapp</a>
+                    <a href="#" class="dropdown-item">facebook</a>
+                    <a href="#" class="dropdown-item">twitter</a>
+                </div>
+        
+            </div><hr>
+            <!--accordian-->
+            <div class="container" id="accordion">
+                <h3>BOOTSTRAP</h3>
+    
+                <div class="card">
+                    <div  class=" card-head " >
+                         <a class="card-link" href="#accordExample" data-bs-toggle="collapse" > how bootstrap accodrion works</a>
+                    </div>
+                   
+                    <div class="collapse" id="accordExample" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            First create a container with accord heading then cfreate a card--having card heading
+                            card body then create a div having class collapse and put the  body in the collapsethen createa relation between car head and body using id and put data toggle in the 
+                            card head and then reference the accord head in the card body using data-parent.Thus it works
+                        </div>
+                    </div>
+                    
+    
+                    </div>
+                </div>
+             </div>
+    
+              <!--progreess bar-->
+        <div class="progress my-5">
+            <div class="progress-bar w-50 ms-start bg-info">loading </div>
+          </div>
+    
+          <!--multiole colors-->
+          <div class="progress" style="height:2rem">
+            <div class="progress-bar bg-success w-50 progress-bar-striped">green</div>
+            <div class="progress-bar bg-warning w-50 progress-bar-striped progress-bar-animated">yellow</div>
+            <div class="progress-bar bg-alert w-75 progress-bar-animated">red</div>
+            <div class="progress-bar bg-dark w-25">dark</div>
+          </div>
+    
+    
+    </section>
+
+    <!--form-->
+    <section id="form" class="bg-alert mt-5" style="padding:80px" >
+        <h3 class="container text-center">SIGN UP</h3>
+        <!--vertical form start-->
+          <div class="container">
+            <div class="container">
+              <div class="card my-4">
+                <div class="card-body">
+                  <form action="/" method="post">
+                    <!--name-->
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label for="first_name">FIRST NAME</label>
+                          <input type="text" id="first_name" name="first_name" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" class="form-control">
+                      </div>
+                    </div>
+                    <!--number and mail-->
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label for="mobile_number">MOBILE NUMBER</label>
+                          <input type="number" id="mobile_number" name="mobile_number" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="mail">EMAIL</label>
+                        <!--input group-->
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              @
+                            </span>
+                          </div>
+                          <input type="email" id="mail" name="mail" class="form-control">
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <!--password-->
+                   <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="passcode">PASSWORD</label>
+                        <input type="password" id="passcode " name="passcode" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label for="passcode">CONFIRM PASSWORD</label>
+                        <input type="password" id="passcode " name="passcode" class="form-control">
+                      </div>
+                    </div>
+                   <div class="mb-3">
+                    <div class="form-check text-center">
+                      <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                      <label for="checkbox">I agree the <a href="#" data-bs-toggle="modal" data-bs-target="#rj">terms and conditions</a> </label>
+                    </div>
+                   </div>
+                   <!--buttuon-->
+                   <div class="mb-3 text-center">
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                   <button class="btn btn-success" type="submit">Register</button>
+                   </div>
+                  </form>
+                </div>
+              </div>
+            
+            </div>
+            
+          </div><hr>
+          <!--horizontal form-->
+          <h3 class="text-center">LOGIN</h3>
+        <div class="container">
+             <div class="card my-4">
+              <div class="card-body">
+                <form action="/" method="post">
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="mail">EMAIL</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              @
+                            </span>
+                          </div>
+                          <input type="email" id="mail" name="mail" class="form-control">
+                        </div>
+                       
+        
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="mb-3">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label for="passcode">PASSWORD</label>
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="password" id="passcode" name="passcode" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 form-check text-center ">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</a></label>
+                  </div>
+                  <div class="mb-3 text-center"><button class="btn btn-primary btn-block" type="submit" >LOGIN</button></div>
+                </form>
+              </div>
+             </div>
+        </div>
+        <div class="modal fade" id="rj" data-bs-backdrop="static" data-bs-keyboard="false" >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header ">
+                <p class="modal-title">TERMS AND CONDITIONS</p>
+               
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse nemo minima eaque porro ex magnam doloremque numquam fugit cumque? Vel consequuntur quo nulla nihil maiores est ab, animi voluptatem.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="button">I agree</button>
+                <button class="btn btn-secondary text-light" data-bs-dismiss="modal" type="button">Never</button>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--card-->
+    <section id="card" class="bg-info mt-5" style="padding:80px" >
+
+          <header class="bg-primary text-dark text-center"><h1 class="container">CARD</h1></header>
+       <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container mb-5">
+                    <div class="card " style="width:18rem">
+                        <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+                        <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                            <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                                He is from batlagundu in Dindigul District studied B.E at 
+                                SBMCET with aggregate of 6.91cgpa.
+                            </p>
+                        </div>
+                        <div class="card-footer">This is footer section</div>
+                    </div>
+                </div>
+       
+            </div>
+            <div class="col">
+                <div class="container mb-5">
+                    <div class="card " style="width:18rem">
+                        <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+                        <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                            <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                                He is from batlagundu in Dindigul District studied B.E at 
+                                SBMCET with aggregate of 6.91cgpa.
+                            </p>
+                        </div>
+                        <div class="card-footer">This is footer section</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="container mb-5">
+                    <div class="card " style="width:18rem">
+                        <img src="./assests/imgrg.JPG" alt="my img" class="card-img-top" >
+                        <div class="card-body"> <h3 class="card-title text-center">RAGUL JEEVAN </h3>
+                            <p class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                                He is from batlagundu in Dindigul District studied B.E at 
+                                SBMCET with aggregate of 6.91cgpa.
+                            </p>
+                        </div>
+                        <div class="card-footer">This is footer section</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       </div>
+        
+<!-- horizontal cards-->
+
+
+<!--list group-->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group text-center">
+                <li class="list-group-item bg-primary">SOCIAL MEDIA</li>
+                <li class="list-group-item">WHTASAPP</li>
+                <li class="list-group-item">FACEBOOK</li>
+                <li class="list-group-item">INSTAGRAM</li>
+            </ul>
+        </div>
+            <!--horizontal card-->
+            <div class="col-md-8"></div>
+            <div class="container">
+                <!--list-->
+                <div class="card">
+                    <div class="row no-gutter">
+                        <div class="col-md-4">
+                         <img src="./assests/imgrg.JPG" alt="rj" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-head">RAGUL JEEVAN</h3>
+                                <P class="card-text"> Ragul is a good boy with forward attitude hoping to be a good future.
+                                    He is from batlagundu in Dindigul District studied B.E at 
+                                    SBMCET with aggregate of 6.91cgpa.</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!--grid-->
+    <section id="grid" class="bg-successmt-5">
+        <hr>   
+        <p class="bg-secondary display-6 text-center container">BOOTSTRAP GRID</p> 
+        
+         <div class="container">
+            <div class="row  text-center">
+                <div class="col border bg-light"><a >SPAN 1</a></div>
+                <div class="col border bg-light">SPAN 1</div>
+                <div class="col border bg-light">SPAN 1</div>
+                <div class="col border bg-light">SPAN 1</div>
+                <div class="col border bg-light">SPAN 1</div>
+            </div>
+    
+    </section>
+
+    <!--table-->
+    <section id="table" class="bg-primary mt-5">
+        <header class="bg-primary text-center text-dark "><h1 class="container">table</h1></header>
+        <div class="container">
+            <table class="table table-bordered table-stripped-row text-center table-hover">
+                <thead class="bg-dark text-light">
+                    <tr>
+                        <th>head1</th>
+                        <th>head2</th>
+                        <th>head3</th>
+                    </tr>
+                    </thead>
+                   <tbody><tr class="table-stripped-column">
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr>
+                <tr>
+                    <td>cell</td>
+                    <td>cell</td>
+                    <td>cell</td>
+                </tr></tbody> 
+                
+            </table>
+         </div>
+    
+    </section>
+
+    <!--footer-->
+            <footer class="bg-dark mt-5">
+                <footer class="footer container">
+                    <h3 class="text-center bg-warning ">end of list</h3>
+                                  </footer>
+              
+            </footer>
+
+            <script>
+                let scrollspy = new bootstrap.ScrollSpy(document.body {       
+                    
+                        target:'#myScroll'
+                    }
+                )
+            </script>
+    <script src="../assests/js/bootstrap.min.js"> </script>
+    <script src="../assests/js/jquery.min.js"></script>
+
+</body>
+</html>

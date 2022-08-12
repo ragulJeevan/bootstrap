@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title style="background-color:red">bootstrap</title>
+   <link rel="stylesheet" href="assests/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="./assests/css/style.css">
+   <!-- Write your comments here -->
+</head>
+<body >
+    <!--nav start-->
+    <header>
+        
+            <nav class=" navbar navbar-dark bg-primary navbar-expand-md ">
+             <div class="container">   <a href="/" class="navbar-brand">BOOTSTRAP NAV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar">
+                                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item "> <a class="nav-link text-white " href="#">HOME</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">MENU</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">ABOUT</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">CAREERS</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li> 
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        
+    </header>
+<!-- nav end-->
+    <h3 class="container text-center">SIGN UP</h3>
+<!--vertical form start-->
+  <div class="container">
+    <div class="container">
+      <div class="card my-4">
+        <div class="card-body">
+          <form action="/" method="post">
+            <!--name-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="mb-3">
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" id="first_name" name="first_name" class="form-control">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="last_name" class="form-control">
+              </div>
+            </div>
+            <!--number and mail-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="mb-3">
+                  <label for="mobile_number">MOBILE NUMBER</label>
+                  <input type="number" id="mobile_number" name="mobile_number" class="form-control">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="mail">EMAIL</label>
+                <!--input group-->
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      @
+                    </span>
+                  </div>
+                  <input type="email" id="mail" name="mail" class="form-control">
+                </div>
+               
+              </div>
+            </div>
+            <!--password-->
+           <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label for="passcode">PASSWORD</label>
+                <input type="password" id="passcode " name="passcode" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label for="passcode">CONFIRM PASSWORD</label>
+                <input type="password" id="passcode " name="passcode" class="form-control">
+              </div>
+            </div>
+           <div class="mb-3">
+            <div class="form-check text-center">
+              <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+              <label for="checkbox">I agree the <a href="#" data-bs-toggle="modal" data-bs-target="#rj">terms and conditions</a> </label>
+            </div>
+           </div>
+           <!--buttuon-->
+           <div class="mb-3 text-center">
+            <button class="btn btn-secondary" type="reset">Reset</button>
+           <button class="btn btn-success" type="submit">Register</button>
+           </div>
+          </form>
+        </div>
+      </div>
+    
+    </div>
+    
+  </div><hr>
+  <!--horizontal form-->
+  <h3 class="text-center">LOGIN</h3>
+<div class="container">
+     <div class="card my-4">
+      <div class="card-body">
+        <form action="/" method="post">
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="mail">EMAIL</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      @
+                    </span>
+                  </div>
+                  <input type="email" id="mail" name="mail" class="form-control">
+                </div>
+               
+
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="passcode">PASSWORD</label>
+              </div>
+              <div class="col-sm-6">
+                <input type="password" id="passcode" name="passcode" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-check text-center ">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember Me</a></label>
+          </div>
+          <div class="mb-3 text-center"><button class="btn btn-primary btn-block" type="submit" >LOGIN</button></div>
+        </form>
+      </div>
+     </div>
+</div>
+<div class="modal fade" id="rj" data-bs-backdrop="static" data-bs-keyboard="false" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <p class="modal-title">TERMS AND CONDITIONS</p>
+       
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse nemo minima eaque porro ex magnam doloremque numquam fugit cumque? Vel consequuntur quo nulla nihil maiores est ab, animi voluptatem.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button">I agree</button>
+        <button class="btn btn-secondary text-light" data-bs-dismiss="modal" type="button">Never</button>
+      </div>
+  
+    </div>
+  </div>
+</div>
+ 
+    <script src="./assests/js/bootstrap.min.js"> </script>
+    
+    <script src="./assests/js/bootstrap.min.js"></script>
+
+</body>
+</html>
